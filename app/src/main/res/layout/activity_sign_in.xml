@@ -7,18 +7,35 @@
     tools:context=".ui.SignInActivity">
 
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/anim" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:layout_marginStart="8dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -68,7 +85,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="55dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
@@ -77,14 +94,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+
             android:layout_weight="1"
             android:background="@color/black" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+
+            android:fontFamily="@font/alata"
             android:text="OR"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -94,7 +114,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:background="@color/black" />
     </LinearLayout>
@@ -103,24 +124,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Not Registered"
-            android:paddingEnd="16dp"
+
+            android:text="Not Registered ?"
+
             android:textAlignment="textEnd" />
 
         <TextView
             android:id="@+id/btnSignUp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+
             android:paddingStart="8dp"
             android:text="Sign Up"
             android:textColor="@color/color1"
