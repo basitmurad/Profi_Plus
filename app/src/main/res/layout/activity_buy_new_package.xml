@@ -63,6 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Your Account"
+                android:id="@+id/editTextAccount"
 
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -75,33 +76,57 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Your Tranascation ID"
+                android:hint="Your Transcation ID"
+                android:id="@+id/editTextTranscationdId"
 
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
 
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginBottom="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
 
-            android:fontFamily="@font/poppins_medium"
-            android:padding="8dp"
-            android:text="Payment screenshot "
-            android:textColor="@color/black"
-            android:textSize="16sp" />
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp"
+                android:text="Payment screenshot "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_margin="8dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/image" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/paymentScreenShot"
+                android:layout_margin="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btnUpload"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/backda"
+                android:backgroundTint="@color/clor2"
+                android:textColor="@color/white"
+                android:text="Upload"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -13,17 +13,18 @@
         android:theme="@style/Theme.ProfitPlus"
         tools:targetApi="31">
         <activity
+            android:name=".ui.ConfirmPackageActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.BuyNewPackageActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.ActivatePakagesActivity"
-            android:exported="false" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".ui.ActivePackagesActivity"
             android:exported="false" />

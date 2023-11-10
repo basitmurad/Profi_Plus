@@ -34,7 +34,7 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        binding.btnActivatePackages.setOnClickListener(new View.OnClickListener() {
+        binding.btnBuyNewPackages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DashboardActivity.this, ActivatePakagesActivity.class));
