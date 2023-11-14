@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.basit.profitplus.R;
 import com.basit.profitplus.databinding.ActivitySignUpBinding;
@@ -23,6 +24,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                checkValidation();
 
                 HideKeyBoard.hideKeyboard(SignUpActivity.this);
             }
@@ -62,7 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
         if (binding.etEmail.getText().toString().isEmpty())
         {
-            binding.etNumber.setError("Email is empty");
+            binding.etEmail.setError("Email is empty");
         }
 
 
@@ -73,6 +75,9 @@ public class SignUpActivity extends AppCompatActivity {
             cnic = binding.etCnic.getText().toString();
             city = binding.etCity.getText().toString();
             number = binding.etNumber.getText().toString();
+
+
+            Toast.makeText(this, "Account Created successfully", Toast.LENGTH_SHORT).show();
         }
     }
 }

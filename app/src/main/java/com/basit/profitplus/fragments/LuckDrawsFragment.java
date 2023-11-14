@@ -9,11 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.basit.profitplus.R;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 
-public class ActivePakagesFragment extends Fragment {
-
-
+public class LuckDrawsFragment extends BottomSheetDialogFragment {
 
 
 
@@ -21,6 +20,9 @@ public class ActivePakagesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_active_pakages, container, false);
-    }
+        View view =  inflater.inflate(R.layout.fragment_luck_draws, container, false);
+
+
+
+    return  view;}
 }

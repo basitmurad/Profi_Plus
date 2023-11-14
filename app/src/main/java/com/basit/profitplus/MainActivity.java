@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.TextView;
 
+import com.basit.profitplus.ui.DashboardActivity;
 import com.basit.profitplus.ui.SignInActivity;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
@@ -25,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
         final TextView textView = findViewById(R.id.text);
 
         // Create an ObjectAnimator to move the TextView from left to right
-        ObjectAnimator animator = ObjectAnimator.ofFloat(textView, View.TRANSLATION_X, 0f, 500f);
-        animator.setDuration(1200); // Animation duration in milliseconds
-        animator.setInterpolator(new LinearInterpolator()); // Linear animation
-        animator.setRepeatCount(1); // Repeat the animation once
-
-        // Start the animation
-        animator.start();
+//        ObjectAnimator animator = ObjectAnimator.ofFloat(textView, View.TRANSLATION_X, 0f, 300f);
+//        animator.setDuration(1200); // Animation duration in milliseconds
+//        animator.setInterpolator(new LinearInterpolator()); // Linear animation
+//        animator.setRepeatCount(1); // Repeat the animation once
+//
+//        // Start the animation
+//        animator.start();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -40,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
 //                        .duration(700)
 //                        .repeat(1)
 //                        .playOn(findViewById(R.id.text));
-                startActivity(new Intent(MainActivity.this, SignInActivity.class));
+                startActivity(new Intent(MainActivity.this, DashboardActivity.class));
             }
-        },1000);
+        },500);
 
-       ;
+       
     }
 }

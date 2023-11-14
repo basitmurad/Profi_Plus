@@ -5,58 +5,51 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
+
 import android.os.Bundle;
-import android.view.View;
+
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import com.basit.profitplus.R;
-import com.basit.profitplus.databinding.ActivityActivePakagesBinding;
-import com.bumptech.glide.Glide;
+
+import com.basit.profitplus.databinding.ActivityActiveBalanceBinding;
+
+
+
+import java.util.ArrayList;
 
 public class ActiveBalanceActivity extends AppCompatActivity {
 
 
-    private ActivityActivePakagesBinding binding;
+    private ActivityActiveBalanceBinding binding;
     private String account, id , amount;
     private boolean isImageUploaded = false;
+
+    String adminAccount  ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityActivePakagesBinding.inflate(getLayoutInflater());
+        binding = ActivityActiveBalanceBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
+            ClipboardManager clipboardManager =
+                    (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 
+            // Create a ClipData object to hold the text
+            ClipData clipData = ClipData.newPlainText("label", adminAccount);
 
-        binding.appCompatButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                if (binding.editTextAccount.getText().toString().isEmpty()) {
-                    Toast.makeText(ActiveBalanceActivity.this, "Your account", Toast.LENGTH_SHORT).show();
-                }
-                if (binding.editTextTranscationdId.getText().toString().isEmpty()) {
-                    Toast.makeText(ActiveBalanceActivity.this, "Enter the transaction Id", Toast.LENGTH_SHORT).show();
-                }
-                if (binding.editTextAmount.getText().toString().isEmpty()) {
-                    Toast.makeText(ActiveBalanceActivity.this, "Enter the amount", Toast.LENGTH_SHORT).show();
-                }
-                else {
-
-                    account = binding.editTextAccount.getText().toString();
-                    id = binding.editTextTranscationdId.getText().toString();
-                    amount = binding.editTextAmount.getText().toString();
-
-                    showDialog(ActiveBalanceActivity.this);
-                }
+            // Set the ClipData on the clipboard
+            if (clipboardManager != null) {
+                clipboardManager.setPrimaryClip(clipData);
             }
-        });
+       ;
 
 
 
@@ -80,21 +73,21 @@ public class ActiveBalanceActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-    private boolean checkValidation() {
-        if (binding.editTextAccount.getText().toString().isEmpty()) {
-            binding.editTextAccount.setError("Please enter the account using which you have payment ");
-            return false;
-        }
-
-        if (binding.editTextTranscationdId.getText().toString().isEmpty()) {
-            binding.editTextTranscationdId.setError("Enter Valid Transcation ID");
-            return false;
-        }
-
-        account = binding.editTextAccount.getText().toString();
-        id = binding.editTextTranscationdId.getText().toString();
-        return true;
-    }
+//    private boolean checkValidation() {
+//        if (binding.editTextAccount.getText().toString().isEmpty()) {
+//            binding.editTextAccount.setError("Please enter the account using which you have payment ");
+//            return false;
+//        }
+//
+//        if (binding.editTextTranscationdId.getText().toString().isEmpty()) {
+//            binding.editTextTranscationdId.setError("Enter Valid Transcation ID");
+//            return false;
+//        }
+//
+//        account = binding.editTextAccount.getText().toString();
+//        id = binding.editTextTranscationdId.getText().toString();
+//        return true;
+//    }
 
     private void openFileManager() {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
@@ -104,21 +97,21 @@ public class ActiveBalanceActivity extends AppCompatActivity {
         startActivityForResult(intent, 1);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1 && resultCode == RESULT_OK && data != null) {
-            Uri imageUri = data.getData();
-
-
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == 1 && resultCode == RESULT_OK && data != null) {
+//            Uri imageUri = data.getData();
 //
-            Glide.with(this).load(imageUri).into(binding.paymentScreenShot);
-
-            isImageUploaded = true;
-//            Toast.makeText(this, "Upload successfully", Toast.LENGTH_SHORT).show();
-
-
-        }
-    }
+//
+////
+//            Glide.with(this).load(imageUri).into(binding.paymentScreenShot);
+//
+//            isImageUploaded = true;
+////            Toast.makeText(this, "Upload successfully", Toast.LENGTH_SHORT).show();
+//
+//
+//        }
+//    }
 
 }

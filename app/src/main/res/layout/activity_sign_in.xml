@@ -70,6 +70,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/btnSignIn"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="44dp"
             android:layout_marginTop="32dp"

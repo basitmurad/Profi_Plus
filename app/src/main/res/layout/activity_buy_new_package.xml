@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.BuyNewPackageActivity">
 
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -14,10 +15,11 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
 
-        android:textColor="@color/black"
         android:fontFamily="@font/poppins_medium"
-        android:text="Please fill the detail correctly "
+        android:text="Buy a new package\n to get more bonus"
+
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,117 +40,22 @@
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-
-    <LinearLayout
-        android:id="@+id/linearLayout9"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
+        android:layout_height="0dp"
 
-        android:layout_height="wrap_content"
+        android:id="@+id/recycler"
         android:layout_marginStart="8dp"
+
+
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_goneMarginTop="16dp">
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your Account"
-                android:id="@+id/editTextAccount"
-
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your Transcation ID"
-                android:id="@+id/editTextTranscationdId"
-
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="5dp"
-
-                android:fontFamily="@font/poppins_medium"
-                android:padding="8dp"
-                android:text="Payment screenshot "
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:id="@+id/paymentScreenShot"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/image" />
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:id="@+id/btnUpload"
-                android:paddingTop="6dp"
-                android:paddingBottom="6dp"
-                android:layout_gravity="end"
-                android:layout_marginEnd="16sp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/backda"
-                android:backgroundTint="@color/clor2"
-                android:textColor="@color/white"
-                android:text="Upload"
-                />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/back_stroke"
-        android:backgroundTint="@color/color1"
-        android:fontFamily="@font/poppins_medium"
-
-
-        android:text="Upload"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout9"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout9"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:listitem="@layout/packages_details_layout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

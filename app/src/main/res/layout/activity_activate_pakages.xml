@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F3F2F4"
-    tools:context=".ui.ActivatePakagesActivity">
+    tools:context=".ui.ActivatePackagesActivity">
 
     <TextView
         android:id="@+id/textView5"
@@ -17,7 +17,7 @@
         android:textAlignment="center"
         android:fontFamily="@font/poppins_light"
         android:padding="3dp"
-        android:text="Buy a new package\n to get more bonous"
+        android:text="Your Active Packages are "
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

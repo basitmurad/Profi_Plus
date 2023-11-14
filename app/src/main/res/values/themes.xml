@@ -7,11 +7,19 @@
 
     <style name="Base.MtTheme.ProfitPlus" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/your_primary_color</item>
-        <item name="colorSecondary">@color/your_secondary_color</item>
+
     </style>
 
 
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
 
+    <style name="BottomSheetStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+
+
+    </style>
     <style name="Theme.ProfitPlus" parent="Base.Theme.ProfitPlus" />
 </resources>

@@ -4,6 +4,42 @@
     <color name="white">#FFFFFFFF</color>
     <color name="color1">#6628D5</color>
     <color name="clor2">#03A9F4</color>
-    <color name="your_primary_color">#3F51B5</color>
-    <color name="your_secondary_color">#FF4081</color>
+<!--    <color name="your_primary_color">#3F51B5</color>-->
+<!--    <color name="your_secondary_color">#FF4081</color>-->
+<!--    <color name="_2196f3">#2196F3</color>-->
+<!--    <color name="stroke_color">#673AB7</color>-->
+
+<!--    <color name="purple">#673AB7</color>-->
+<!--    <color name="purple_light">#5725B1</color>-->
+
+<!--    &lt;!&ndash;    <color name="purple">#FFFFFD</color>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <color name="purple_light">#FFFFFD</color>&ndash;&gt;-->
+<!--    <color name="purple_200">#7322D6</color>-->
+<!--    <color name="purple_500">#FF6200EE</color>-->
+<!--    <color name="purple_700">#FF3700B3</color>-->
+<!--    <color name="teal_200">#FF03DAC5</color>-->
+<!--    <color name="teal_700">#FF018786</color>-->
+
+<!--    <color name="edittext_bg">#EBB42E</color>-->
+<!--    <color name="darkcolorbg">#FFA000</color>-->
+<!--    <color name="red">#E9221C</color>-->
+<!--    <color name="green">#1FAF38</color>-->
+<!--    <color name="green_back">#07323B</color>-->
+
+<!--    <color name="light_bluish">#061E44</color>-->
+<!--    <color name="more_light_bluish">#0D2F4E</color>-->
+
+<!--    <color name="tab_selected">#246667</color>-->
+
+<!--    <color name="colorPrimary">#9C27B0</color>-->
+<!--    <color name="colorPrimaryDark">#673AB7</color>-->
+<!--    <color name="colorAccent">#474954</color>-->
+<!--    <color name="colorAccentLight">#53545E</color>-->
+<!--    <color name="textColorPrimary">#FFFFFF</color>-->
+<!--    <color name="colorBackground">#FFFFFF</color>-->
+<!--    <color name="colorBackgroundDarker">#f7f7f7</color>-->
+<!--    <color name="colorTextAction">#37474F</color>-->
+<!--    <color name="colorButton">#000000</color>-->
+<!--    <color name="colorSeparator">#f2f2f2</color>-->
+
 </resources>
