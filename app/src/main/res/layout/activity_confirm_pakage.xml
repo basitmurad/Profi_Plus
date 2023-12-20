@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F3F3"
+    android:background="@color/bgcolor"
     tools:context=".ui.ConfirmPackageActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
 
+        android:background="@drawable/appba_back"
+        android:backgroundTint="@color/white"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

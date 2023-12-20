@@ -21,6 +21,10 @@
         android:theme="@style/Theme.ProfitPlus"
         tools:targetApi="31">
         <activity
+            android:name=".ui.WithdrawActivity"
+            android:exported="false"
+            android:theme="@style/Base.MtTheme.ProfitPlus"/>
+        <activity
             android:name=".ui.DashboardsActivity"
             android:exported="false" />
         <activity
@@ -64,13 +68,11 @@
         <activity
             android:name=".ui.DashboardActivity"
             android:exported="true"
-            android:theme="@style/Base.MtTheme.ProfitPlus"></activity>
+            android:theme="@style/Base.MtTheme.ProfitPlus" />
         <activity
             android:name=".ui.SignUpActivity"
             android:exported="true"
-            android:theme="@style/Base.MtTheme.ProfitPlus">
-
-        </activity>
+            android:theme="@style/Base.MtTheme.ProfitPlus"></activity>
         <activity
             android:name=".ui.SignInActivity"
             android:exported="true"
@@ -78,7 +80,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Base.MtTheme.ProfitPlus"></activity>
+            android:theme="@style/Base.MtTheme.ProfitPlus" />
 
         <meta-data
             android:name="preloaded_fonts"

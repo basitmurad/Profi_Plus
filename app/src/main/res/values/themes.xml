@@ -7,10 +7,9 @@
 
     <style name="Base.MtTheme.ProfitPlus" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">#EFECEC</item> <!-- Set your primary color -->
-        <item name="colorPrimaryVariant">#EFECEC</item> <!-- Set your primary variant color -->
-        <item name="android:statusBarColor">#EFECEC</item> <!-- Set your status bar color -->
-        <item name="android:bottom">@color/white</item> <!-- Set your status bar color -->
+        <item name="colorPrimary">#DDDADA</item> <!-- Set your primary color -->
+        <item name="colorPrimaryVariant">#DDDADA</item> <!-- Set your primary variant color -->
+        <item name="android:statusBarColor">#DDDADA</item> <!-- Set your status bar color -->
     </style>
 
 

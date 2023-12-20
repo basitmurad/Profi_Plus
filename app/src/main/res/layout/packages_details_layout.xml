@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:background="@color/yellow"
+        android:background="#03A9F4"
         android:padding="8dp">
 
         <LinearLayout
@@ -46,6 +46,7 @@
                     android:textSize="13sp"
 
                     />
+
 
                 <TextView
                     android:id="@+id/textDurations"
