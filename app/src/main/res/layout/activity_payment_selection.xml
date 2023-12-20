@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF8F8"
+    tools:context=".ui.PaymentSelectionActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+
+
+            >
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:rotation="180"
+
+                android:src="@drawable/baseline_arrow_forward_24"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+
+                android:gravity="center"
+                android:text="Accounts "
+                android:textSize="18sp"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="66dp"
+            android:letterSpacing="0.03"
+
+            android:text="Select any payment options from below\nto deposit fund"
+            android:textColor="#E33F3F"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnEasyPaisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="18sp"
+            app:cardElevation="20dp"
+
+            >
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="#9DDCE4"
+
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="EasyPaisa"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:tint="@color/black" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSadaPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="18sp"
+            app:cardElevation="20dp"
+
+            >
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="#9DDCE4"
+
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="SadaPay"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:tint="@color/black" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnJazzCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="18sp"
+            app:cardElevation="20dp"
+
+            >
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="#9DDCE4"
+
+                android:orientation="horizontal"
+                android:padding="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="JazzCash"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:tint="@color/black" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/txtEng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:text="Must choose the option that you want to deposit the money in case of wrong selection the balance can be not shown in your profile"
+        android:textAlignment="center"
+        android:textColor="#FA0E0E"
+        android:textSize="13.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout14"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14" />
+
+
+</LinearLayout>

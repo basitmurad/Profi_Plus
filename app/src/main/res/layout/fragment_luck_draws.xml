@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bottomsheet_back"
+    android:backgroundTint="@color/yellow"
+    tools:context=".fragments.LuckDrawsFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Bonus is waiting for you!!"
+
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="8dp"
+        android:layout_marginTop="18dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/back_bar"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="2 day lucky draw"
+
+        android:drawableLeft="@drawable/luck2"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+android:layout_marginTop="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+
+
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+
+        android:background="@drawable/back_sq"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="7 day lucky draw"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:drawableLeft="@drawable/luck3"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+
+        android:background="@drawable/back_sq"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="15 day lucky draw"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+     android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:drawableLeft="@drawable/celebration"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+
+        android:background="@drawable/back_sq"
+        />
+
+</LinearLayout>
