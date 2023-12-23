@@ -2,13 +2,18 @@ package com.basit.profitplus.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
 import com.basit.profitplus.R;
 import com.basit.profitplus.databinding.ActivitySignInBinding;
+import com.basit.profitplus.helper.HideKeyBoard;
 
 public class SignInActivity extends AppCompatActivity {
 
@@ -38,9 +43,13 @@ public class SignInActivity extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 
     private void checkValidation() {
+
         if (binding.etEmail.getText().toString().isEmpty())
         {
 //            Toast.makeText(SignInActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
@@ -59,6 +68,8 @@ public class SignInActivity extends AppCompatActivity {
             password = binding.etPassword.getText().toString();
 
             startActivity(new Intent(SignInActivity.this,DashboardActivity.class));
+
+              HideKeyBoard.hideKeyboard(this);
         }
     }
 

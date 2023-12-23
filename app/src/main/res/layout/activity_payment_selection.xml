@@ -10,38 +10,51 @@
 
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/appba_back"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
 
 
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:rotation="180"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            >
-
-            <ImageView
-                android:id="@+id/btnBack"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="12dp"
-                android:rotation="180"
-
-                android:src="@drawable/baseline_arrow_forward_24"
-
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-
-                android:gravity="center"
-                android:text="Accounts "
-                android:textSize="18sp"
-
-                />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="3dp"
+            android:text="Account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="@+id/btnBack" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
@@ -57,7 +70,7 @@
             android:letterSpacing="0.03"
 
             android:text="Select any payment options from below\nto deposit fund"
-            android:textColor="#E33F3F"
+            android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView5" />
@@ -79,7 +92,7 @@
                 android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
-                android:background="#9DDCE4"
+                android:background="@color/white"
 
                 android:orientation="horizontal"
                 android:padding="16dp"
@@ -120,7 +133,7 @@
                 android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
-                android:background="#9DDCE4"
+                android:background="@color/white"
 
                 android:orientation="horizontal"
                 android:padding="16dp"
@@ -161,7 +174,7 @@
                 android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
-                android:background="#9DDCE4"
+                android:background="@color/white"
 
                 android:orientation="horizontal"
                 android:padding="16dp"

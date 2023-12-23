@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.TextView;
 
 import com.basit.profitplus.databinding.ActivityMyInvitesBinding;
@@ -41,51 +42,28 @@ public class SplashActivity extends AppCompatActivity {
         binding.textView.setAnimation(topAnim);
         binding.textView2.setAnimation(bottomAnim);
 
-//
-//        TextView textView = findViewById(R.id.text);
-//        ObjectAnimator animator = ObjectAnimator.ofFloat(textView, View.AUTOFILL_HINT_NAME, 100f, 300f);
-//        animator.setDuration(1200); // Animation duration in milliseconds
-//        animator.setInterpolator(new LinearInterpolator()); // Linear animation
-////        animator.setRepeatCount(); // Repeat the animation once
-//        animator.addListener(new Animator.AnimatorListener() {
-//            @Override
-//            public void onAnimationStart(@NonNull Animator animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationEnd(@NonNull Animator animation) {
-//                startActivity(new Intent(SplashActivity.this, DashboardActivity.class));
-//
-//
-//            }
-//
-//            @Override
-//            public void onAnimationCancel(@NonNull Animator animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat(@NonNull Animator animation) {
-//
-//            }
-//        });
+//        Animation animation = new TranslateAnimation(
+//                Animation.RELATIVE_TO_SELF, 0,
+//                Animation.RELATIVE_TO_SELF, 0,
+//                Animation.RELATIVE_TO_SELF, -1.0f,
+//                Animation.RELATIVE_TO_SELF, 0
+//        );
+//        Animation animationBottom = new TranslateAnimation(
+//                Animation.RELATIVE_TO_SELF, 0,
+//                Animation.RELATIVE_TO_SELF, 0,
+//                Animation.RELATIVE_TO_SELF, 8.0f,
+//                Animation.RELATIVE_TO_SELF, 0);
+//        animation.setDuration(2000); // 2 seconds duration
+//        binding.textView.startAnimation(animation);
+//        binding.textView2.setAnimation(animation);
 
-        // Start the animation
-//        animator.start();
-
-        Handler handler = new Handler();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-//
-//                YoYo.with(Techniques.SlideInRight)
-//                        .duration(700)
-//                        .repeat(1)
-//                        .playOn(findViewById(R.id.text));
+
                 startActivity(new Intent(SplashActivity.this, SignInActivity.class));
             }
-        },1400);
+        },1100);
 
     }
 }

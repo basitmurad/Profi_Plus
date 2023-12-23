@@ -8,6 +8,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
 
     android:background="@drawable/bottomsheet_back"
+    android:backgroundTint="@color/bgcolor"
         android:id="@+id/cardBalance">
 
         <View
@@ -42,13 +43,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/poppins_medium"
-                android:textAlignment="textEnd"
+                android:textAlignment="textStart"
+                android:padding="3dp"
 
 
 
                 android:text="Make sure add real balance else your deposit\n balance is not verified"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+                android:textColor="@color/black"
+                android:textSize="13sp" />
 
 
 
@@ -56,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:layout_margin="8dp"
                     android:background="@drawable/back_edit"
                   >
                     <EditText
@@ -69,7 +72,6 @@
                         android:hint="Enter balance to deposit"
                         android:padding="16dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/white"
                         android:textSize="12sp" />
                 </LinearLayout>
 

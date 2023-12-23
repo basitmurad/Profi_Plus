@@ -98,7 +98,7 @@
 
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
+            android:id="@+id/btnActivatesPackages"
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            app:layout_constraintTop_toBottomOf="@+id/btnActivatesPackages">
 
             <TextView
 
@@ -450,11 +450,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/bgcolor"
+            android:background="@color/white"
             android:padding="12dp">
 
             <LinearLayout
-                android:id="@+id/linearLayout9"
+                android:id="@+id/btnDeposite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -594,7 +594,7 @@
         android:layout_marginBottom="60dp"
 
         android:background="@drawable/back_sq"
-        android:backgroundTint="#F3F0F0"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -675,7 +675,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-
+android:foregroundGravity="center"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu" />

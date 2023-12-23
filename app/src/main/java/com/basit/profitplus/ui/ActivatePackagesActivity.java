@@ -3,6 +3,7 @@ package com.basit.profitplus.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.basit.profitplus.adapters.PackageDetailsAdapter;
 import com.basit.profitplus.databinding.ActivityActivatePakagesBinding;
@@ -22,6 +23,11 @@ public class ActivatePackagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityActivatePakagesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.btnBack.setOnClickListener(v -> {
+
+            finish();
+        });
 
 
 

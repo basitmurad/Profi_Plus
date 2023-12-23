@@ -53,6 +53,8 @@ public class SignUpActivity extends AppCompatActivity {
             else
                 Toast.makeText(this, "Account Created successfully", Toast.LENGTH_SHORT).show();
 
+            HideKeyBoard.hideKeyboard(this);
+
         });
     }
 
