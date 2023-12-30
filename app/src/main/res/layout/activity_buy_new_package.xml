@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
+    android:orientation="vertical"
     tools:context=".ui.BuyNewPackageActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,11 +55,64 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardElevation="16dp"
+       app:cardCornerRadius="16dp"
+       android:layout_margin="9dp"
+
+
+
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="6dp"
+           android:layout_gravity="center"
+           android:background="#FF4032"
+
+           >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Your Balance is "
+
+               android:padding="4dp"
+               android:textAlignment="textEnd"
+               android:layout_margin="3dp"
+               android:layout_weight="1"
+               android:textSize="16sp"
+               android:textColor="@color/white"
+               android:fontFamily="@font/poppins_medium"
+               android:maxLines="1"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="1000 "
+               android:id="@+id/textAmount"
+               android:maxLines="1"
+               android:layout_weight="1"
+               android:textColor="@color/white"
+               android:fontFamily="@font/poppins_light"
+               android:textSize="16sp"
+               android:padding="4dp"
+               android:layout_margin="3dp"
+               />
+
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
 
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
 
 
@@ -73,4 +127,4 @@
         tools:listitem="@layout/packages_details_layout" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -35,6 +35,9 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
+        Toast.makeText(this, "" + binding.textViewAmount.getText().toString()
+                , Toast.LENGTH_SHORT).show();
+
         binding.btnDeposite.setOnClickListener(v -> {
             BottomSheetDialog dialog = new BottomSheetDialog(DashboardActivity.this);
 //            View bottomsheetView = LayoutInflater.from(this).
@@ -73,7 +76,11 @@ public class DashboardActivity extends AppCompatActivity {
         binding.layoutBuyNewPackage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashboardActivity.this, BuyNewPackageActivity.class));
+
+                Intent intent = new Intent(DashboardActivity.this, BuyNewPackageActivity.class);
+
+                intent.putExtra("amount", binding.textViewAmount.getText().toString());
+                startActivity(intent);
 
             }
         });
@@ -89,17 +96,14 @@ public class DashboardActivity extends AppCompatActivity {
         binding.btnWithdraw.setOnClickListener(v -> {
 
 
-        startActivity(new Intent(DashboardActivity.this, WithdrawActivity.class));
+            startActivity(new Intent(DashboardActivity.this, WithdrawActivity.class));
 
         });
 
 
-
-        binding.bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener()
-        {
+        binding.bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
 
 
                 if (item.getItemId() == R.id.navigation_luckydraw) {

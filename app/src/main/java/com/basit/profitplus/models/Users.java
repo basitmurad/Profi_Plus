@@ -1,15 +1,15 @@
 package com.basit.profitplus.models;
 
 public class Users {
-    private String email , password , cnic, name , city , number ;
+    private String email , password , address, name , number ;
 
-    public Users(String email, String password, String cnic, String name, String city, String number) {
+    public Users(String email, String password, String address, String name, String number) {
         this.email = email;
         this.password = password;
-        this.cnic = cnic;
+        this.address = address;
         this.name = name;
-        this.city = city;
         this.number = number;
+
     }
 
     public Users() {
@@ -31,12 +31,12 @@ public class Users {
         this.password = password;
     }
 
-    public String getCnic() {
-        return cnic;
+    public String getAddress() {
+        return address;
     }
 
-    public void setCnic(String cnic) {
-        this.cnic = cnic;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getName() {
@@ -45,14 +45,6 @@ public class Users {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
     }
 
     public String getNumber() {
